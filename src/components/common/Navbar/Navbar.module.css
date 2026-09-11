@@ -1,0 +1,126 @@
+.navbar {
+    position: fixed;
+    top: var(--space-12);
+    left: 0;
+    right: 0;
+    margin: 0 var(--space-4);
+}
+
+.navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-6);
+
+}
+
+.logo {
+    font-family: var(--font-heading);
+    color: var(--color-primary-700);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.logo span {
+    color: var(--color-black);
+}
+
+.navLinks {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-glass);
+    padding: 0 var(--space-8);
+    border-radius: var(--radius-xl);
+}
+
+.navLinks ul {
+    /* background-color: var(--color-cyan-200); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--component-space-md);
+    padding: var(--space-5);
+}
+
+.navLinks ul li {
+    transition: var(--transition-link);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+
+    position: relative;
+
+}
+
+.navLinks ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    background-color: var(--color-primary-600);
+    height: 1.4px;
+    width: 0;
+    /* display: none; */
+    transform: translateX(-50%);
+    transition: width var(--duration-normal) var(--ease-in-out);
+}
+
+.navLinks ul li:hover {
+    color: var(--color-primary-700);
+}
+
+.navLinks ul li:hover::after {
+    /* display: inline-block; */
+    width: 100%;
+}
+
+.hamburger {
+    color: var(--color-black);
+    display: none;
+    transition: all .4s var(--ease-in);
+
+}
+
+.hamburger:active {
+    color: var(--color-gray-200);
+    transform: translateX(-60px);
+}
+
+@media (max-width: 1023px) {
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .navbarContent {
+        margin: 0 var(--space-6);
+        padding: var(--space-2) var(--space-4);
+        background: var(--glass-bg-light);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: 1px solid var(--glass-border);
+        box-shadow: var(--shadow-glass);
+        border-radius: var(--radius-xl);
+    }
+
+    .navLinks,
+    .loginBtnWrapper {
+        display: none;
+    }
+
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        top: var(--space-8);
+
+    }
+
+    .navbarContent {
+        border-radius: var(--radius-lg);
+    }
+}

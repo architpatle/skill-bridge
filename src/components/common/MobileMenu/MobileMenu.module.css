@@ -1,0 +1,92 @@
+.MobileMenu {
+    position: fixed;
+    right: -240px;
+    top: 0;
+
+    background-color: var(--color-primary-950);
+    height: 100vh;
+    min-width: 240px;
+
+    display: none;
+    transition: all .28s var(--ease-in);
+
+
+}
+
+.open {
+    right: 0;
+    transition: all .28s var(--ease-in);
+
+}
+
+.closeBtn {
+    position: absolute;
+    right: var(--space-4);
+    top: var(--space-4);
+    color: var(--color-primary-100);
+    transition: all .4s var(--ease-in);
+
+}
+
+.closeBtn:active{
+    color: var(--color-primary-200);
+    transform: rotate(200deg);
+}
+
+.MobileMenuContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--component-space-md);
+    margin: var(--space-14) var(--space-10);
+}
+
+.navLinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: var(--component-space-md);
+}
+
+.navLinks ul li {
+    color: var(--color-primary-100);
+
+    transition: var(--transition-link);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+
+    position: relative;
+
+}
+
+.navLinks ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    background-color: var(--color-primary-400);
+    height: 1.4px;
+    width: 0;
+    transform: translateX(-50%);
+    transition: width var(--duration-normal) var(--ease-in-out);
+}
+
+.navLinks ul li:hover {
+    color: var(--color-primary-300);
+}
+
+.navLinks ul li:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .MobileMenu {
+        display: flex;
+    }
+}
+
+@media (max-width: 639px) {
+    .navLinks ul li {
+        font-size: var(--font-size-sm);
+    }
+}

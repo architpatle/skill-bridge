@@ -1,0 +1,9 @@
+.hero {
+    background-color: var(--color-primary-200);
+    /* min-height: 100vh; */
+    margin: var(--space-4);
+    padding-left:   var(--space-6);
+    padding-right:   var(--space-6);
+    padding-bottom: var(--space-6);
+    border-radius: var(--radius-2xl);
+}
