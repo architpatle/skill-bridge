@@ -11,13 +11,13 @@ const Hero = () => {
       <div className={`${styles.contentWrapper} `}>
 
         {/* Eyebrow  */}
-        <Eyebrow eyebrowSub="Saas" eyebrowMain="Powerful Tools, Simple Interface" />
+        <Eyebrow eyebrowSub="Discover" eyebrowMain=" your career readiness" />
 
         {/* main heading */}
-        <h1 className={`${styles.mainHeading} `} >Turn Data into Business Intelligence.</h1>
+        <h1 className={`${styles.mainHeading} `} >Bridge your skills to your dream career</h1>
 
         {/* description */}
-        <p className={`${styles.description} `} >Simplify the way you work with our powerful task management platform From organizing daily to-dos to managing complex projects.</p>
+        <p className={`${styles.description} `} >Analyze your skills, discover gaps, and get a personalized roadmap to become job-ready.</p>
 
         {/* CTA */}
         <div className={`${styles.ctaWrapper} `}>
