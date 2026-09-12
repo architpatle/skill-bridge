@@ -1,0 +1,23 @@
+.eyebrow{
+    background-color: var(--color-primary-100);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    display: inline-block;
+    padding: var(--space-2) var(--space-4) var(--space-2) var(--space-1) ;
+    border-radius: var(--radius-md);
+    border: var(--border-width-medium) solid var(--color-primary-300);
+}
+
+.eyebrow span{
+    background: var(--gradient-ai);
+    color: var(--color-white);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    margin-right: var(--space-1);
+}
+
+@media (max-width: 479px) {
+    .eyebrow{
+        font-size: var(--font-size-xs);
+    }
+}

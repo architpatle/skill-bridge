@@ -3,6 +3,7 @@ import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import { RiMenu2Fill } from "react-icons/ri";
 import MobileMenu from '../MobileMenu/MobileMenu';
+import Button from '../../ui/Button/Button';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,12 +38,13 @@ const Navbar = () => {
 
           {/* Login Button */}
           <div className={`${styles.loginBtnWrapper} `}>
-            <button className='btn-primary' >Login</button>
+            {/* <button className='btn-primary' >Login</button> */}
+            <Button value="Login" />
           </div>
 
           {/* Hamburger */}
           <div className={`${styles.hamburger}`}
-            onClick={() => { setMenuOpen(true); console.log("OPen") }}>
+            onClick={() => { setMenuOpen(true) }}>
             <RiMenu2Fill size={20} />
           </div>
 

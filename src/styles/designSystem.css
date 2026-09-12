@@ -250,7 +250,7 @@ ol {
             var(--color-primary-50) 50%,
             var(--color-bg-primary) 75%);
 
-    /* Hero Background — Recommended */
+    /* Hero Background  */
     --gradient-bg-hero:
         radial-gradient(circle at 50% 0%,
             var(--color-primary-200) 0%,
@@ -261,6 +261,35 @@ ol {
             var(--color-bg-primary) 0%,
             var(--color-primary-50) 100%);
 
+
+    --gradient-bg-hero-wave:
+        radial-gradient(ellipse 85% 52% at 18% 0%,
+            var(--color-primary-200) 0%,
+            var(--color-primary-100) 32%,
+            var(--color-primary-50) 55%,
+            transparent 78%),
+        radial-gradient(ellipse 56% 45% at 84% -10%,
+            var(--color-primary-200) 0%,
+            var(--color-primary-100) 32%,
+            var(--color-primary-50) 55%,
+            transparent 78%),
+        radial-gradient(ellipse 45% 67% at -10% 54%,
+            var(--color-primary-200) 0%,
+            var(--color-primary-100) 32%,
+            var(--color-primary-50) 55%,
+            transparent 78%),
+        radial-gradient(ellipse 75% 55% at 88% 82%,
+            var(--color-primary-200) 0%,
+            var(--color-primary-100) 35%,
+            var(--color-primary-50) 58%,
+            transparent 78%),
+        radial-gradient(ellipse 60% 40% at 55% 45%,
+            rgba(199, 210, 254, 0.35) 0%,
+            transparent 70%),
+        linear-gradient(160deg,
+            var(--color-white) 0%,
+            var(--color-primary-50) 48%,
+            var(--color-primary-100) 100%);
 
     /* =========================
    GLASS EFFECT
@@ -273,6 +302,8 @@ ol {
     --glass-bg-strong: rgba(255, 255, 255, 0.8);
 
     --glass-border: rgba(255, 255, 255, 0.7);
+
+    --glass-border-primary: rgba(131, 144, 241, 0.118);
 
     --glass-border-subtle: rgba(255, 255, 255, 0.4);
 
@@ -1003,7 +1034,7 @@ ol {
 
     --transition-button:
         background-color var(--duration-fast) var(--ease-in-out),
-        background var(--duration-fast) var(--ease-in-out) , 
+        background var(--duration-normal) var(--ease-in-out),
         color var(--duration-normal) var(--ease-smooth),
         border-color var(--duration-fast) var(--ease-in-out),
         box-shadow var(--duration-normal) var(--ease-smooth),
@@ -1424,3 +1455,29 @@ select {
 :disabled {
     cursor: not-allowed;
 }
+
+/* Resposniveness added */
+
+
+/* Large Desktop */
+@media (min-width: 1440px) {}
+
+/* Desktop */
+@media (min-width: 1280px) and (max-width: 1439px) {}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Tablet */
+@media (max-width: 1023px) {
+    
+}
+
+/* Small Tablet */
+@media (min-width: 640px) and (max-width: 767px) {}
+
+/* Mobile */
+@media (max-width: 639px) {}
+
+/* Small Mobile */
+@media (max-width: 479px) {}

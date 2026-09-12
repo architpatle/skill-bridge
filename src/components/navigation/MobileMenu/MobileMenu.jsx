@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './MobileMenu.module.css'
 import { Link } from 'react-router-dom';
 import { RiCloseFill } from "react-icons/ri";
+import Button from '../../ui/Button/Button';
 
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     return (
@@ -10,7 +11,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             <div className={`${styles.MobileMenuContent}`}>
 
                 {/* close btn */}
-                <div className={`${styles.closeBtn}`} onClick={() => { setMenuOpen(false); console.log("Close") }}>
+                <div className={`${styles.closeBtn}`} onClick={() => { setMenuOpen(false) }}>
                     <RiCloseFill size={24} />
                 </div>
 
@@ -34,7 +35,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
                 {/* Login Button */}
                 <div className={`${styles.loginBtnWrapper} `}>
-                    <button className='btn-primary' >Login</button>
+                    <Button value="Login" />
                 </div>
 
             </div>
