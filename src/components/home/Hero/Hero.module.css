@@ -14,7 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .contentWrapper {
@@ -24,8 +23,6 @@
     /* justify-content: center; */
     align-items: center;
     text-align: center;
-
-
 }
 
 .mainHeading {

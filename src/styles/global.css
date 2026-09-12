@@ -3,6 +3,42 @@ body {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: var(--font-heading );
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+}
+
+
+/* Section Heading */
+.heading {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-tight);
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+@media (max-width: 479px) {
+    .heading {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+/* Section description */
+
+.description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-text-secondary);
 }
