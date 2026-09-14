@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/home/Hero/Hero'
 import Gap from '../components/home/Gap/Gap'
 import Solution from '../components/home/Solution/Solution'
+import HowItWorks from '../components/home/HowItWorks/HowItWorks'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Gap />
       <Solution />
+      <HowItWorks />
     </>
   )
 }

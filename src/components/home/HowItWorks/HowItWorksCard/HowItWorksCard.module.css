@@ -1,0 +1,118 @@
+.howItWorksCard {
+    background-color: transparent;
+    border-radius: var(--radius-3xl);
+
+    padding: var(--space-8);
+    height: 100%;
+
+    transition: var(--transition-card);
+
+}
+
+.howItWorksCard:hover {
+    background-color: var(--surface-primary);
+}
+
+.topArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+
+    position: relative;
+
+}
+
+.topArea .number {
+    font-size: var(--font-size-6xl);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-heading);
+
+
+    overflow: hidden;
+
+    color: transparent;
+    -webkit-text-stroke: var(--border-width-thin) var(--color-primary-700);
+    transition: var(--transition-card);
+
+}
+
+.howItWorksCard:hover .topArea .number {
+    color: var(--color-primary-100);
+}
+
+.topArea .iconWrapExtra {
+    padding: var(--space-5);
+    z-index: 1;
+
+    transition: var(--transition-card);
+    position: relative;
+
+    overflow: hidden;
+}
+
+.topArea .iconWrapExtra::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-ai);
+    opacity: 0;
+
+    transition: var(--transition-card);
+
+}
+
+
+.topArea .iconWrapExtra .iconExtra {
+    font-size: var(--font-size-4xl);
+    transition: var(--transition-card);
+    position: relative;
+    z-index: 9;
+}
+
+
+
+.howItWorksCard:hover .topArea .iconWrapExtra::before {
+    opacity: 1;
+}
+
+.howItWorksCard:hover .topArea .iconWrapExtra .iconExtra {
+    color: var(--color-white);
+}
+
+.cardContent .cardHeadingExtra {
+    margin-bottom: var(--space-2);
+
+}
+
+@media (max-width:1023px) {
+    .howItWorksCard {
+        padding: var(--space-6);
+    }
+}
+
+@media (max-width:889px) {
+    .topArea {
+        margin-bottom: var(--space-2);
+    }
+
+    .topArea .number {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+@media (max-width:479px) {
+
+    .howItWorksCard{
+        padding: var(--space-5);
+
+    }
+    .topArea {
+
+        margin-bottom: var(--space-0);
+    }
+
+    .topArea .number {
+        font-size: var(--font-size-4xl);
+    }
+}
