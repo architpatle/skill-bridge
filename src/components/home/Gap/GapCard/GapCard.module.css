@@ -22,44 +22,6 @@
     box-shadow: var(--shadow-sm);
 }
 
-.iconWrap {
-    background-color: var(--surface-primary);
-    padding: var(--space-3);
-    border: var(--border-width-thin) solid var(--color-primary-200);
-    border-radius: var(--radius-lg);
-
-    box-shadow: var(--shadow-lg);
-
-}
-
-.iconWrap .icon{
-   color: var(--color-primary-700)   ;
-   font-size: var(--font-size-3xl);
-}
-
-
-.cardHeading {
-    /* background-color: pink; */
-    font-size: var(--font-size-xl);
+.cardHeadingExtra {
     margin-bottom: var(--space-2);
-}
-
-.cardDescription {
-    /* background-color: cornflowerblue; */
-
-}
-
-@media (max-width: 639px) {
-.iconWrap {
-    padding: var(--space-2);
-
-}
-
-.iconWrap .icon{
-   font-size: var(--font-size-2xl);
-
-}
-    .cardHeading{
-        font-size: var(--font-size-lg);
-    }
 }

@@ -3,10 +3,29 @@ import styles from './Gap.module.css'
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'
 import GapCard from './GapCard/GapCard'
 import {
-    RiCompass3Line,
-    RiSearchEyeLine,
-    RiRouteLine
+    RiCompass3Line, RiSearchEyeLine, RiRouteLine
 } from "react-icons/ri";
+
+const Cards = [
+    {
+        id: '1',
+        icon: RiCompass3Line,
+        cardHeading: 'No Clear Direction',
+        cardDescription: 'Unsure which skills matter for your target role.',
+    },
+    {
+        id: '2',
+        icon: RiSearchEyeLine,
+        cardHeading: 'Hidden Skill Gaps',
+        cardDescription: "Don't know what's missing between you and job readiness.",
+    },
+    {
+        id: '3',
+        icon: RiRouteLine,
+        cardHeading: 'Scattered Learning',
+        cardDescription: 'Too many resources, with no clear roadmap.',
+    },
+];
 
 const Gap = () => {
     return (
@@ -27,11 +46,9 @@ const Gap = () => {
 
                 {/* Gap Cards */}
                 <div className={`${styles.cardWrap}`}>
-                    <GapCard cardHeading="No Clear Direction" cardDescription="Unsure which skills matter for your target role." icon={RiCompass3Line} />
-
-                    <GapCard cardHeading="Hidden Skill Gaps" cardDescription="Don't know what's missing between you and job readiness." icon={RiSearchEyeLine} />
-
-                    <GapCard cardHeading="Scattered Learning" cardDescription="Too many resources, with no clear roadmap." icon={RiRouteLine} />
+                    {Cards.map((card) => (
+                        <GapCard cardHeading={card.cardHeading} cardDescription={card.cardDescription} icon={card.icon} />
+                    ))}
                 </div>
             </div>
 

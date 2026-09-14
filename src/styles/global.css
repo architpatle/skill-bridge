@@ -34,11 +34,72 @@ h6 {
     }
 }
 
-/* Section description */
+/* Heading Card - List */
+.cardHeading {
+    /* background-color: pink; */
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+}
 
+@media (max-width: 639px) {
+
+    .cardHeading {
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* Section description */
 .description {
     font-size: var(--font-size-base);
     line-height: var(--line-height-normal);
     letter-spacing: var(--letter-spacing-wide);
     color: var(--color-text-secondary);
+}
+
+/* Icon 1*/
+.iconWrap {
+    background-color: var(--surface-primary);
+    padding: var(--space-3);
+    border: var(--border-width-thin) solid var(--color-primary-200);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.iconWrap .icon {
+    color: var(--color-primary-700);
+    font-size: var(--font-size-3xl);
+}
+
+/* Icon 2*/
+.iconWrap2 {
+    background: var(--gradient-ai);
+    padding: var(--space-3);
+    border: var(--border-width-thin) solid var(--color-primary-200);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.iconWrap2 .icon2 {
+    color: var(--color-white);
+    font-size: var(--font-size-3xl);
+}
+
+
+@media (max-width:639px) {
+
+    .iconWrap,
+    .iconWrap2 {
+        padding: var(--space-2);
+
+    }
+
+    .iconWrap .icon,
+    .iconWrap2 .icon2 {
+        font-size: var(--font-size-2xl);
+
+    }
 }
