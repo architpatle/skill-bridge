@@ -6,6 +6,7 @@
     padding: var(--space-2) var(--space-4) var(--space-2) var(--space-1) ;
     border-radius: var(--radius-md);
     border: var(--border-width-medium) solid var(--color-primary-300);
+    text-transform: capitalize;
 }
 
 .eyebrow span{

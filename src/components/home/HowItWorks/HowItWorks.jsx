@@ -42,7 +42,7 @@ const HowItWorks = () => {
                 <div className={`${styles.headingWrapper}`}>
 
                     {/* Eyebrow  */}
-                    <Eyebrow eyebrowSub="Your" eyebrowMain="path to readiness" />
+                    <Eyebrow eyebrowSub="Your" eyebrowMain="Path To Readiness" />
 
                     {/* main heading */}
                     <h2 className={`${styles.headingExtra}  heading`} >Everything you need to move closer to your career goal.</h2>

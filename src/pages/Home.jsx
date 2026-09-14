@@ -3,6 +3,7 @@ import Hero from '../components/home/Hero/Hero'
 import Gap from '../components/home/Gap/Gap'
 import Solution from '../components/home/Solution/Solution'
 import HowItWorks from '../components/home/HowItWorks/HowItWorks'
+import Features from '../components/home/Features/Features'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Gap />
       <Solution />
       <HowItWorks />
+      <Features />
     </>
   )
 }

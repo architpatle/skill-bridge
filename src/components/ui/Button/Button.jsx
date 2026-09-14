@@ -4,7 +4,7 @@ import styles from './Button.module.css'
 const Button = ({ value, variant = "primary" }) => {
     return (
         <button className={`${styles.btn} ${styles[variant]}`}>
-            {value}
+            <span>{value}</span>
         </button>
     )
 }

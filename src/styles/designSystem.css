@@ -1038,7 +1038,9 @@ ol {
         color var(--duration-normal) var(--ease-smooth),
         border-color var(--duration-fast) var(--ease-in-out),
         box-shadow var(--duration-normal) var(--ease-smooth),
-        transform var(--duration-fast) var(--ease-smooth);
+        transform var(--duration-fast) var(--ease-smooth),
+        opacity  var(--duration-fast) var(--ease-smooth);
+
 
     --transition-card:
         transform var(--duration-normal) var(--ease-smooth),
