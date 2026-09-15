@@ -9,7 +9,6 @@
     border: var(--border-width-thin) solid var(--color-primary-100);
     border-radius: var(--radius-3xl);
 
-
     padding: var(--space-6);
 
     transition: var(--transition-card);

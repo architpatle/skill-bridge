@@ -1,29 +1,20 @@
-.features {
-    /* background-color: antiquewhite; */
-}
-
 .contentWrapper {
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .headingWrapper {
-    /* background-color: aliceblue; */
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: var(--container-lg);
     margin-bottom: var(--space-12);
-
-
 }
 
 .headingExtra {
     margin-top: var(--space-4);
     text-align: center;
-    /* background-color: aliceblue; */
 
 }
 
@@ -33,32 +24,81 @@
     gap: var(--space-6);
 }
 
-.cardsWrapper > :nth-child(1) {
+.cardsWrapper> :nth-child(1) {
     grid-column: span 3;
 }
 
-.cardsWrapper > :nth-child(2) {
+.cardsWrapper> :nth-child(2) {
     grid-column: span 2;
 }
 
-.cardsWrapper > :nth-child(3) {
+.cardsWrapper> :nth-child(3) {
     grid-column: 1 / span 2;
 }
 
-.cardsWrapper > :nth-child(4) {
+.cardsWrapper> :nth-child(4) {
     grid-column: 3 / span 3;
 }
 
 
+.dotsWrapper {
+    display: none;
+    gap: var(--space-2);
+    align-items: center;
+    justify-content: center;
+
+
+    margin-top: var(--space-8);
+}
+
+.dotsWrapper .dot {
+    background-color: var(--color-primary-200);
+
+    min-height: auto;
+    height: 10px;
+    width: 10px;
+
+    border-radius: var(--radius-full);
+
+    transition: all 600ms ease !important;
+
+
+}
+
+.dotActive {
+    background-color: var(--color-primary-500) !important;
+    scale: 1.1;
+    transition: all 600ms ease !important;
+
+}
+
 @media (max-width: 767px) {
-    .cardsWrapper {
-        grid-template-columns: 1fr;
+
+    .cardsWrapper> :nth-child(1),
+    .cardsWrapper> :nth-child(2),
+    .cardsWrapper> :nth-child(3),
+    .cardsWrapper> :nth-child(4) {
+        grid-column: 1;
     }
 
-    .cardsWrapper > :nth-child(1),
-    .cardsWrapper > :nth-child(2),
-    .cardsWrapper > :nth-child(3),
-    .cardsWrapper > :nth-child(4) {
-        grid-column: 1;
+    .cardsWrapper {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .cardsWrapper>* {
+        flex: 0 0 100%;
+        /*flex: grow shrink basis */
+
+        transform: translateX(calc((-100% - var(--space-6))*var(--activeIndex)));
+
+        transition: all 600ms ease !important;
+    }
+
+    .dotsWrapper{
+        display: flex;
     }
 }

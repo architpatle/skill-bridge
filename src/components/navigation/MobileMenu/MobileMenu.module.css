@@ -9,6 +9,8 @@
 
     display: none;
     transition: all .28s var(--ease-in);
+
+    z-index: 9;
 }
 
 .open {
