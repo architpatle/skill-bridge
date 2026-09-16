@@ -1,4 +1,4 @@
-.featuresCard{
+.featuresCard {
     background-color: var(--surface-primary);
 
     border: var(--border-width-thin) solid var(--color-primary-100);
@@ -10,22 +10,25 @@
     transition: var(--transition-card);
 }
 
-.imageWrapper{
+.imageWrapper {
     border-radius: var(--radius-xl);
     overflow: hidden;
 
     max-height: 260px;
     background: var(--gradient-bg-hero-wave);
-    
+
 
     margin-bottom: var(--space-8);
 }
 
-.imageWrapper img{
+.imageWrapper img {
     width: 100%;
-    /* object-fit: c; */
     max-height: 260px;
+    transition: var(--transition-card);
+}
 
+.featuresCard:hover .imageWrapper img {
+    scale: 1.02;
 }
 
 .cardContent .cardHeadingExtra {

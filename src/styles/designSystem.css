@@ -1047,7 +1047,9 @@ ol {
         box-shadow var(--duration-normal) var(--ease-smooth),
         border-color var(--duration-normal) var(--ease-in-out),
         background-color var(--duration-normal) var(--ease-in-out),
+        scale var(--duration-normal) var(--ease-in-out),
         opacity var(--duration-normal) var(--ease-in-out);
+        
 
     --transition-link:
         color var(--duration-fast) var(--ease-in-out),

@@ -4,6 +4,7 @@ import Gap from '../components/home/Gap/Gap'
 import Solution from '../components/home/Solution/Solution'
 import HowItWorks from '../components/home/HowItWorks/HowItWorks'
 import Features from '../components/home/Features/Features'
+import ProductPreview from '../components/home/ProductPreview/ProductPreview'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Solution />
       <HowItWorks />
       <Features />
+      <ProductPreview />
     </>
   )
 }

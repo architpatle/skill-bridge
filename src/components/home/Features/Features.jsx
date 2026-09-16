@@ -42,6 +42,7 @@ const Features = () => {
     // Carousel Logic [active card track]
     const [activeIndex, setActiveIndex] = useState(0);
 
+    // auto slide logic for carousel
     useEffect(() => {
 
         const timer = setInterval(() => {
