@@ -1,13 +1,6 @@
-.productPreview {
-    /* background-color: antiquewhite; */
-}
-
 .contentWrapper {
-    /* background-color: aqua; */
     height: max-content;
-    /* padding-bottom: 250px; */
     padding-bottom: 20%;
-
 }
 
 .contentWrapperInner {
@@ -69,7 +62,7 @@
 }
 
 .dashboardVideoWrapper {
-    background-color: seagreen;
+    /* background-color: seagreen; */
     /* aspect-ratio: 16/9; */
     position: relative;
 }

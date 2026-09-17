@@ -58,6 +58,34 @@
     opacity: 1;
 }
 
+.tertiary {
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+
+    position: relative;
+}
+
+.tertiary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+
+    /* background: var(--color-violet-100); */
+    background: var(--color-bg-primary);
+
+    transition: var(--transition-button);
+
+}
+
+.tertiary:hover::before {
+    opacity: 1;
+    box-shadow: inset 0 0 15px 2px rgba(47, 43, 113, 0.20);
+
+}
+
+
+
 @media (max-width: 639px) {
     .btn {
         font-size: var(--font-size-sm);

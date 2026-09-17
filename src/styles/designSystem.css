@@ -1039,7 +1039,7 @@ ol {
         border-color var(--duration-fast) var(--ease-in-out),
         box-shadow var(--duration-normal) var(--ease-smooth),
         transform var(--duration-fast) var(--ease-smooth),
-        opacity  var(--duration-fast) var(--ease-smooth);
+        opacity  var(--duration-normal) var(--ease-smooth);
 
 
     --transition-card:

@@ -5,6 +5,7 @@ import Solution from '../components/home/Solution/Solution'
 import HowItWorks from '../components/home/HowItWorks/HowItWorks'
 import Features from '../components/home/Features/Features'
 import ProductPreview from '../components/home/ProductPreview/ProductPreview'
+import CTA from '../components/home/CTA/CTA'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <HowItWorks />
       <Features />
       <ProductPreview />
+      <CTA />
     </>
   )
 }
