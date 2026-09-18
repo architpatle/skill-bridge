@@ -6,3 +6,6 @@ Themes Reference:
 Navbar Enhancement:
 1. Click outside the side menu bar => close the menu
 2. Active Page highlight in navlink
+
+Hero Section Enhancement:
+1. Add two UI cards on either side of the text content
