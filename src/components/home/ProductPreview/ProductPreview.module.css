@@ -126,8 +126,6 @@
 .keyPointsWrapper ul li .iconWrapExtra {
     border-radius: var(--radius-full);
     padding: var(--space-1);
-
-
 }
 
 .keyPointsWrapper ul li .iconWrapExtra .iconExtra {
