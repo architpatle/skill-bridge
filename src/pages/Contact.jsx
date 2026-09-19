@@ -1,10 +1,12 @@
 import React from 'react'
+import Hero from '../components/sections/Hero/Hero'
+import heroData from '../data/heroData'
 
 const Contact = () => {
   return (
-    <div>
-      Contact
-    </div>
+    <>
+      <Hero data={heroData.contact} />
+    </>
   )
 }
 

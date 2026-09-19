@@ -68,7 +68,7 @@ const Footer = () => {
                                     <Link className={`${styles.quickLinksItem} `} to="/">Disclaimer</Link>
                                 </li>
                                 <li>
-                                    <Link className={`${styles.quickLinksItem} `} to="/">Privacy Policy</Link>
+                                    <Link className={`${styles.quickLinksItem} `} to="/">Privacy</Link>
                                 </li>
                                 <li>
                                     <Link className={`${styles.quickLinksItem} `} to="/about">Terms</Link>
@@ -78,7 +78,7 @@ const Footer = () => {
                         </div>
 
                         <div className={`${styles.col4} `}>
-                            <h3 className={`${styles.cardHeadingExtra} cardHeading`} >Contact</h3>
+                            <h3 className={`${styles.cardHeadingExtra} cardHeading`} >Connect With Us</h3>
 
                             <ul className={`${styles.quickLinks} `}>
                                 <li>

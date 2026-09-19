@@ -1,10 +1,12 @@
 import React from 'react'
+import Hero from '../components/sections/Hero/Hero'
+import heroData from '../data/heroData'
 
 const About = () => {
   return (
-    <div>
-      About
-    </div>
+    <>
+      <Hero data ={heroData.about} />
+    </>
   )
 }
 
