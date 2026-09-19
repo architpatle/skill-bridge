@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 
 import styles from './Footer.module.css'
@@ -25,7 +24,7 @@ const Footer = () => {
                                 Skill<span>Bridge</span>
                             </div>
 
-                            <p  className={`${styles.descriptionExtra} description `} >Analyze your skills, discover gaps, and get a personalized roadmap.</p>
+                            <p className={`${styles.descriptionExtra} description `} >Analyze your skills, discover gaps, and get a personalized roadmap.</p>
 
                             <div className={`${styles.social} `}>
                                 <div className={`${styles.iconWrapExtra} iconWrap`}>
@@ -93,7 +92,12 @@ const Footer = () => {
 
                     <div className={`${styles.footerBottom} `}>
 
-                        © 2026 SkillBridge. All Rights Reserved
+                        <p>© 2026 SkillBridge. All Rights Reserved
+                        </p>
+
+                        <p>
+                            A product by <a href="https://archit-patle-portfolio.netlify.app/" target='_blank'>Archit Patle</a>
+                        </p>
                     </div>
                 </div>
 
