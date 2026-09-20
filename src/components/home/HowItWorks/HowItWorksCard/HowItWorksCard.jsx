@@ -3,7 +3,6 @@ import styles from './HowItWorksCard.module.css'
 
 const HowItWorksCard = ({ number, icon: Icon, heading, description }) => {
     return (
-        <div>
             <div className={`${styles.howItWorksCard}`}>
                 <div className={`${styles.topArea}`}>
 
@@ -23,7 +22,6 @@ const HowItWorksCard = ({ number, icon: Icon, heading, description }) => {
                     <p className=" description">{description}</p>
                 </div>
             </div>
-        </div>
     )
 }
 

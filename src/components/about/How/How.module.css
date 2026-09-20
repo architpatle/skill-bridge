@@ -1,0 +1,150 @@
+.how {
+
+    /* background-color: pink; */
+}
+
+.contentWrapper {
+    /* background-color: aliceblue; */
+}
+
+.contentWrapperInner {
+    /* background-color: salmon; */
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--space-20);
+
+}
+
+.content {
+    /* background-color: beige; */
+}
+
+.carouselSide {
+    min-width: 0;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselWrapper {
+
+    background-image: url("../../../assets/images/about/why.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: var(--radius-xl);
+
+    overflow: hidden;
+    /* height: 100%; */
+
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+
+    position: relative;
+
+}
+
+.carouselWrapper::after {
+    content: "";
+    inset: 0;
+    background-color: var(--color-primary-900);
+    opacity: 0.4;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.carouselTrack>* {
+    z-index: 9;
+}
+
+.carouselTrack {
+    display: flex;
+    /* width: 100%; */
+    gap: var(--space-6);
+    /* background-color: aqua; */
+    min-width: 0;
+}
+
+.carouselTrack>* {
+    flex: 0 0 100%;
+    /*flex: grow shrink basis */
+
+    transform: translateX(calc((-100% - var(--space-6))*var(--activeIndex)));
+
+    transition: all 600ms ease !important;
+}
+
+
+.dotsWrapper {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    justify-content: center;
+
+
+    margin-top: var(--space-8);
+}
+
+.dotsWrapper .dot {
+    background-color: var(--color-primary-200);
+
+    min-height: auto;
+    height: 10px;
+    width: 10px;
+
+    border-radius: var(--radius-full);
+
+    transition: all 600ms ease !important;
+
+
+}
+
+.dotActive {
+    background-color: var(--color-primary-500) !important;
+    scale: 1.1;
+    transition: all 600ms ease !important;
+
+}
+
+.headingExtra {
+    margin-top: var(--space-4);
+    /* max-width: var(--container-md); */
+}
+
+.descriptionExtra {
+    margin-top: var(--space-12);
+    /* max-width: var(--container-md); */
+
+}
+
+@media (max-width:899px) {
+    .contentWrapperInner {
+        gap: var(--space-12);
+
+    }
+}
+
+@media (max-width:767px) {
+    .contentWrapperInner {
+        grid-template-columns: 1fr;
+
+    }
+
+    .contentWrapperInner .carouselSide{
+        order: 2;
+    }
+
+    .contentWrapperInner .content{
+        order: 1;
+    }
+
+    .descriptionExtra{
+    margin-top: var(--space-6);
+        
+    }
+
+}

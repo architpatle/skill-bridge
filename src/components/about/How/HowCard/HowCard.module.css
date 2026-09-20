@@ -1,0 +1,59 @@
+.howCard {
+    background-color: transparent;
+    /* border-radius: var(--radius-3xl); */
+
+    padding: var(--space-8);
+
+    /* background-color: pink; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.topArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+
+    position: relative;
+}
+
+.topArea .number {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-heading);
+
+
+    overflow: hidden;
+
+    color: transparent;
+    -webkit-text-stroke: var(--border-width-thin) var(--color-primary-200);
+    transition: var(--transition-card);
+    transition: all 0.2s ease-in;
+}
+
+.howCard:hover .topArea .number {
+    color: var(--color-primary-700);
+}
+
+.cardContent {
+    /* background-color: yellow; */
+}
+
+.cardContent .cardHeadingExtra {
+    margin-bottom: var(--space-1);
+    color: var(--color-white);
+}
+
+.cardContent .descriptionExtra {
+    color: var(--color-gray-300);
+}
+
+
+@media (max-width: 767px) {
+    .howCard{
+        padding: var(--space-6);
+    }
+}
