@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import styles from './ContactForm.module.css'
 
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'
+import Form from './Form/Form';
 
 import {
     RiMailLine,
     RiPhoneLine
 } from "react-icons/ri";
-import Form from './Form/Form';
+
 
 const ContactForm = () => {
     return (
@@ -69,8 +70,7 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-            </div>
-
+            </div>c
 
         </section>
     )
