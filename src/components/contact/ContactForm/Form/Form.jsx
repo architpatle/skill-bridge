@@ -6,7 +6,7 @@ import Button from '../../../ui/Button/Button'
 
 const Form = () => {
   return (
-    <form>
+    <form lassName={`${styles.form} `}>
       <input type="text" name="fullName" placeholder='Enter Your Full Name' required />
 
       <input type="email" name="email" placeholder='Enter your email' required />
