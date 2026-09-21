@@ -8,7 +8,7 @@ form {
     min-width: 0;
 }
 
-form>* {
+form input, form textarea {
     /* background-color: bisque; */
 
     outline: none;
