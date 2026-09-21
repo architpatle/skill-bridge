@@ -6,6 +6,7 @@ const heroData = {
         description: "Analyze your skills, discover gaps, and get a personalized roadmap to become job-ready.",
         primaryBtn: "Get Started",
         secondaryBtn: "Get In Touch",
+        slider:true,
     },
     about: {
         eyebrowSub: "Understand",

@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Why.module.css'
 
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'

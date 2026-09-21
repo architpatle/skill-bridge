@@ -9,3 +9,4 @@ Navbar Enhancement:
 
 Hero Section Enhancement:
 1. Add two UI cards on either side of the text content
+2. Try bottom marquee

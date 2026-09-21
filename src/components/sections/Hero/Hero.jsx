@@ -1,8 +1,10 @@
 import React from 'react'
+
 import styles from './Hero.module.css'
+
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'
 import Button from '../../ui/Button/Button'
-
+import OurVision from '../../../components/about/OurVision/OurVision'
 
 const Hero = ({ data }) => {
     return (
@@ -31,6 +33,8 @@ const Hero = ({ data }) => {
                 </div>
 
             </div>
+
+            {/* {data.slider && (<OurVision />)} */}
 
         </section>
     )

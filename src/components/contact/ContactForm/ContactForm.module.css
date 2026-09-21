@@ -1,0 +1,115 @@
+.contactForm {
+    /* background-color: aquamarine; */
+}
+
+.contentWrapper {
+    /* background-color: aliceblue; */
+}
+
+.contentWrapperInner {
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-20);
+}
+
+.content {
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentTop {
+    /* background-color:sandybrown; */
+}
+
+.headingExtra {
+    margin-top: var(--space-4);
+}
+
+.descriptionExtra {
+    margin-top: var(--space-8);
+}
+
+.contentBottom {
+    /* background-color: violet; */
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.quickLinksItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+
+    font-size: var(--font-size-base);
+}
+
+.linkContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkContent h6 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Form */
+
+.formWrapper {
+    background-color: var(--surface-primary);
+    border: var(--border-width-thin) solid var(--color-primary-100);
+    border-radius: var(--radius-3xl);
+    box-shadow: var(--shadow-sm);
+
+    padding: var(--space-12);
+
+}
+
+.cardHeadingExtra {
+    margin-bottom: var(--space-8);
+        
+}
+
+@media (max-width:910px) {
+
+    .contentWrapperInner{
+    gap: var(--space-16);
+
+    }
+
+    .formWrapper{
+    padding: var(--space-8);
+
+    }
+}
+
+@media (max-width:767px) {
+
+    .contentWrapperInner{
+        grid-template-columns: 1fr;
+    }
+
+    .content{
+        gap: var(--space-16);
+    }
+
+    .descriptionExtra {
+        margin-top: var(--space-4);
+    }
+
+
+}
+
+@media (max-width:479px) {
+    .formWrapper{
+    padding: var(--space-6);
+
+    }
+}

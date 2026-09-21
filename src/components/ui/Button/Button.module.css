@@ -5,6 +5,8 @@
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     letter-spacing: var(--letter-spacing-wider);
+
+    border: none;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-button);
     transition: var(--transition-button);
