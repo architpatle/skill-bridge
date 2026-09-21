@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './MobileMenu.module.css'
 import { Link } from 'react-router-dom';
 import { RiCloseFill } from "react-icons/ri";
@@ -19,22 +18,22 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 <div className={`${styles.navLinks} `}>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/"  onClick={() => { setMenuOpen(false) }} >Home</Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link to="/about"  onClick={() => { setMenuOpen(false) }} >About</Link>
                         </li>
                         <li>
-                            <Link to="/analyse">Analyse</Link>
+                            <Link to="/analyse"  onClick={() => { setMenuOpen(false) }}>Analyse</Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact"  onClick={() => { setMenuOpen(false) }}>Contact</Link>
                         </li>
                     </ul>
                 </div>
 
                 {/* Login Button */}
-                <div className={`${styles.loginBtnWrapper} `}>
+                <div className={`${styles.loginBtnWrapper} `} >
                     <Button value="Login" />
                 </div>
 
