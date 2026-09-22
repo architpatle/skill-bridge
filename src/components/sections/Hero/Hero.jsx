@@ -5,6 +5,7 @@ import styles from './Hero.module.css'
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'
 import Button from '../../ui/Button/Button'
 import OurVision from '../../../components/about/OurVision/OurVision'
+import { Link } from 'react-router-dom'
 
 const Hero = ({ data }) => {
     return (
@@ -26,9 +27,18 @@ const Hero = ({ data }) => {
 
                     {/* Conditional Rendering to display btn only if the btn data is there */}
 
-                    {data.primaryBtn && (<Button value={data.primaryBtn} />)}
+                    {data.primaryBtn && (
+                        <Link to="/analyse">
+                            <Button value={data.primaryBtn} />
+                        </Link>
+                    )}
 
-                    {data.secondaryBtn && (<Button value={data.secondaryBtn} variant="secondary" />)}
+                    {data.secondaryBtn && (
+                        <Link to="/contact">
+                            <Button value={data.secondaryBtn} variant="secondary" />
+                        </Link>
+
+                    )}
 
                 </div>
 

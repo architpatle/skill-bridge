@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import styles from './CTA.module.css'
 
 import Eyebrow from '../../ui/Eyebrow/Eyebrow'
@@ -22,7 +24,12 @@ const CTA = () => {
                     {/* description */}
                     <p className={`${styles.descriptionExtra} description `} >Turn your skills into a clear career direction with personalized insights, actionable recommendations, and a roadmap built around your goals.</p>
 
-                    <Button value="Check My Readiness" variant='tertiary' />
+                    <Link to="/analyse">
+
+                        <Button value="Check My Readiness" variant='tertiary' />
+
+                    </Link>
+
 
                 </div>
             </div>
