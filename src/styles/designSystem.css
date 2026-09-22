@@ -13,7 +13,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+    /* scrollbar-width: none; */
 }
 
 html,
