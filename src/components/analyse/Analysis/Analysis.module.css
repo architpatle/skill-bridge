@@ -1,0 +1,64 @@
+.analysis {
+    /* background-color: aquamarine; */
+}
+
+.contentWrapper {
+    /* background-color: aliceblue; */
+}
+
+.headingWrapper {
+    /* background-color: rgb(213, 154, 112); */
+    margin-bottom: var(--space-12);
+    max-width: var(--container-lg);
+
+}
+
+.headingExtra {
+    margin-top: var(--space-4);
+}
+
+.stagesAreaWrapper {
+    /* background-color: pink; */
+}
+
+.tabsWrapper {
+    background: var(--color-gray-50);
+    color: var(--color-text-secondary);
+
+    max-width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    border: var(--border-width-medium) solid var(--color-primary-100);
+    border-bottom: var(--color-bg-primary);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+
+    overflow: hidden;
+}
+
+.tabs{
+    cursor: pointer;
+    transition: all .1s ease;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+
+}
+
+.tabActive {
+    /* background-color: rgb(169, 241, 97); */
+    background: var(--gradient-ai);
+    color: var(--color-white);
+
+}
+
+.tabs h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-none);
+
+    padding: var(--space-2) var(--space-4);
+}
+
+.stageWrapper {
+    background-color: bisque;
+}
