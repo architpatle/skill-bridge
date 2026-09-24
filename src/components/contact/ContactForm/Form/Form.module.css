@@ -17,7 +17,11 @@ form {
     padding: var(--space-3) var(--space-4);
 
     transition: var(--transition-input);
+}
 
+.form input:focus-visible, .form textarea:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 3px;
 }
 
 form>*::placeholder{
