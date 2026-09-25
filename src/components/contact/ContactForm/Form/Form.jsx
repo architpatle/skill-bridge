@@ -15,7 +15,7 @@ const Form = () => {
 
       <textarea name="message" rows="5" placeholder='Tell us how we can help...' required></textarea>
 
-      <Button value="Send message" />    
+      <Button value="Send message" />
     </form>
   )
 }

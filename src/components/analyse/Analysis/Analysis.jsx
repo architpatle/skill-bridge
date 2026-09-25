@@ -20,10 +20,8 @@ const Analysis = () => {
 
                 <div className={`${styles.headingWrapper}`}>
 
-                    {/* Eyebrow  */}
                     <Eyebrow eyebrowSub="Analyse" eyebrowMain="your career readiness" />
 
-                    {/* main heading */}
                     <h2 className={`${styles.headingExtra}  heading`} >Discover how ready you are for your target role.</h2>
 
                 </div>

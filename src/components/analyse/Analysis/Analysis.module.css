@@ -37,7 +37,7 @@
     overflow: hidden;
 }
 
-.tabs{
+.tabs {
     cursor: pointer;
     transition: all .1s ease;
     border-radius: var(--radius-md) var(--radius-md) 0 0;
@@ -60,5 +60,9 @@
 }
 
 .stageWrapper {
-    background-color: bisque;
+    background-color: var(--surface-primary);
+    box-shadow: var(--shadow-sm);
+
+    border: var(--border-width-medium) solid var(--color-primary-100);
+    border-radius: 0 var(--radius-2xl) var(--radius-2xl) var(--radius-2xl);
 }
