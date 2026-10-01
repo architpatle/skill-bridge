@@ -69,7 +69,7 @@ const ProfileStage = () => {
 
         <div className={`${styles.visualWrapper} `}>
 
-          <img src={visual} alt="" />
+          <img src={visual} alt="visualImg" />
 
         </div>
 

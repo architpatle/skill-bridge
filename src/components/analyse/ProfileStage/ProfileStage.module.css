@@ -38,7 +38,6 @@
 
     border: var(--border-width-thin) solid var(--color-primary-200);
     border-radius: var(--radius-md);
-
 }
 
 .fieldWrapper .label {
@@ -135,6 +134,8 @@
 
 .visualWrapper img{
  height: 100%;
+ width: 100%;
+
 }
 
 @media (max-width: 1155px) {

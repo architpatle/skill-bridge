@@ -1,0 +1,53 @@
+.analysisStage {
+    /* background-color: rgb(133, 105, 69); */
+    padding: var(--space-12) var(--space-8);
+}
+
+.stageWrapper {
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--space-8);
+
+    margin-top: var(--space-6);
+
+}
+
+.logsWrapper{
+    /* background-color: pink; */
+    background-color: var(--surface-secondary);
+    box-shadow: var(--shadow-sm);
+
+    padding: var(--space-6) var(--space-6);
+
+    border: var(--border-width-thin) solid var(--color-primary-200);
+    border-radius: var(--radius-lg);
+    box-shadow: inset 0 0 12px 0px rgba(47, 43, 113, 0.15);
+
+}
+
+
+.visualWrapper {
+    background-color: aquamarine;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.visualWrapper img{
+ height: 100%;
+ width: 100%;
+}
+
+@media (max-width: 1155px) {
+    .stageWrapper {
+        grid-template-columns: none;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .analysisStage {
+        padding: var(--space-8) var(--space-4);
+    }
+
+}
