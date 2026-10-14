@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 1155px) {
-    .stageWrapper {
+    .stageWrapperInner {
         grid-template-columns: none;
     }
 }

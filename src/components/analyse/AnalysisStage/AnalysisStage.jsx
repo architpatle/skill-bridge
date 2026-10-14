@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import styles from './AnalysisStage.module.css'
 
@@ -8,40 +8,40 @@ import Button from '../../ui/Button/Button'
 import visual from '../../../assets/images/about/why.png'
 import { Link } from 'react-router-dom'
 
-const processingMessages = [
-    "> Initializing SkillBridge AI analysis...",
-    "✓ Profile data loaded",
-
-];
-
 // const processingMessages = [
 //     "> Initializing SkillBridge AI analysis...",
 //     "✓ Profile data loaded",
 
-//     "> Extracting skills and experience...",
-//     "✓ Relevant skills identified",
-
-//     "> Analyzing target role requirements...",
-//     "✓ Role requirements mapped",
-
-//     "> Comparing your skills with role requirements...",
-//     "✓ Skill alignment evaluated",
-
-//     "> Detecting skill gaps...",
-//     "✓ Priority skill gaps identified",
-
-//     "> Assessing your job readiness...",
-//     "✓ Readiness score calculated",
-
-//     "> Prioritizing learning requirements...",
-//     "✓ Learning priorities determined",
-
-//     "> Building your personalized roadmap...",
-//     "✓ Learning path generated",
-
-//     "> Finalizing career readiness insights...",
-//     "✓ Analysis complete"
 // ];
+
+const processingMessages = [
+    "> Initializing SkillBridge AI analysis...",
+    "✓ Profile data loaded",
+
+    "> Extracting skills and experience...",
+    "✓ Relevant skills identified",
+
+    "> Analyzing target role requirements...",
+    "✓ Role requirements mapped",
+
+    "> Comparing your skills with role requirements...",
+    "✓ Skill alignment evaluated",
+
+    "> Detecting skill gaps...",
+    "✓ Priority skill gaps identified",
+
+    "> Assessing your job readiness...",
+    "✓ Readiness score calculated",
+
+    "> Prioritizing learning requirements...",
+    "✓ Learning priorities determined",
+
+    "> Building your personalized roadmap...",
+    "✓ Learning path generated",
+
+    "> Finalizing career readiness insights...",
+    "✓ Analysis complete"
+];
 
 const AnalysisStage = () => {
 
@@ -49,7 +49,8 @@ const AnalysisStage = () => {
     const [messageIndex, setMessageIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
 
-    const [isLoading, setIsLoading] = useState(1);
+    const logsRef = useRef(null);
+    const shouldAutoScroll = useRef(true);
 
     const currentMessage = processingMessages[messageIndex];
     const displayedMessage = currentMessage?.slice(0, charIndex);
@@ -119,6 +120,28 @@ const AnalysisStage = () => {
 
     }, [charIndex, currentMessage]);
 
+    // for auto scroll of logsWrapper
+
+    const handleScroll = () => {
+        const { scrollTop, scrollHeight, clientHeight } = logsRef.current;
+
+        shouldAutoScroll.current = scrollHeight - scrollTop - clientHeight <= 5;
+    }
+
+    useEffect(() => {
+        if (!logsRef.current) return;
+
+        if (!shouldAutoScroll.current) return;
+
+        // logsRef.current.scrollTop = logsRef.current.scrollHeight - logsRef.current.clientHeight;
+
+        logsRef.current.scrollTo({
+            top: logsRef.current.scrollHeight,
+            behavior: "smooth"
+        });
+
+    }, [completedMessages, displayedMessage])
+
 
     return (
         <div className={`${styles.analysisStage}`} >
@@ -130,7 +153,9 @@ const AnalysisStage = () => {
                 <div className={`${styles.stageWrapperInner} `}>
 
 
-                    <div className={`${styles.logsWrapper} `}>
+                    <div ref={logsRef}
+                        onScroll={handleScroll}
+                        className={`${styles.logsWrapper} `}>
                         {completedMessages.map((message, index) => (
                             <div key={index}>
                                 <p className={`${index % 2 === 1 ? styles.logsComplete : ''}`} >{message}</p>
